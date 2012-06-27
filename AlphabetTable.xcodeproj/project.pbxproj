@@ -16,6 +16,8 @@
 		0225BF63159BBAB400924598 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0225BF61159BBAB400924598 /* MainStoryboard_iPhone.storyboard */; };
 		0225BF66159BBAB400924598 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0225BF64159BBAB400924598 /* MainStoryboard_iPad.storyboard */; };
 		0225BF69159BBAB400924598 /* ITVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0225BF68159BBAB400924598 /* ITVViewController.m */; };
+		0225BF7F159BBB3600924598 /* ITVAlphabetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0225BF7E159BBB3600924598 /* ITVAlphabetTableView.m */; };
+		02971212159BD0FB00E52717 /* ITVWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 02971211159BD0FB00E52717 /* ITVWord.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +25,20 @@
 		0225BF4F159BBAB400924598 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0225BF51159BBAB400924598 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0225BF53159BBAB400924598 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		0225BF57159BBAB400924598 /* AlphabetTable-Info.plist */ = {isa = PBXFileReference; path = "AlphabetTable-Info.plist"; sourceTree = "<group>"; };
+		0225BF57159BBAB400924598 /* AlphabetTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlphabetTable-Info.plist"; sourceTree = "<group>"; };
 		0225BF59159BBAB400924598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0225BF5B159BBAB400924598 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0225BF5D159BBAB400924598 /* AlphabetTable-Prefix.pch */ = {isa = PBXFileReference; path = "AlphabetTable-Prefix.pch"; sourceTree = "<group>"; };
-		0225BF5E159BBAB400924598 /* ITVAppDelegate.h */ = {isa = PBXFileReference; path = ITVAppDelegate.h; sourceTree = "<group>"; };
+		0225BF5D159BBAB400924598 /* AlphabetTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlphabetTable-Prefix.pch"; sourceTree = "<group>"; };
+		0225BF5E159BBAB400924598 /* ITVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITVAppDelegate.h; sourceTree = "<group>"; };
 		0225BF5F159BBAB400924598 /* ITVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITVAppDelegate.m; sourceTree = "<group>"; };
 		0225BF62159BBAB400924598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		0225BF65159BBAB400924598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		0225BF67159BBAB400924598 /* ITVViewController.h */ = {isa = PBXFileReference; path = ITVViewController.h; sourceTree = "<group>"; };
+		0225BF67159BBAB400924598 /* ITVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITVViewController.h; sourceTree = "<group>"; };
 		0225BF68159BBAB400924598 /* ITVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITVViewController.m; sourceTree = "<group>"; };
+		0225BF7D159BBB3600924598 /* ITVAlphabetTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITVAlphabetTableView.h; sourceTree = "<group>"; };
+		0225BF7E159BBB3600924598 /* ITVAlphabetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITVAlphabetTableView.m; sourceTree = "<group>"; };
+		02971210159BD0FB00E52717 /* ITVWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITVWord.h; sourceTree = "<group>"; };
+		02971211159BD0FB00E52717 /* ITVWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITVWord.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +85,8 @@
 		0225BF55159BBAB400924598 /* AlphabetTable */ = {
 			isa = PBXGroup;
 			children = (
-				0225BF5E159BBAB400924598 /* ITVAppDelegate.h */,
-				0225BF5F159BBAB400924598 /* ITVAppDelegate.m */,
-				0225BF61159BBAB400924598 /* MainStoryboard_iPhone.storyboard */,
-				0225BF64159BBAB400924598 /* MainStoryboard_iPad.storyboard */,
-				0225BF67159BBAB400924598 /* ITVViewController.h */,
-				0225BF68159BBAB400924598 /* ITVViewController.m */,
+				0225BF7C159BBB0D00924598 /* AlphabetTable */,
+				0225BF7A159BBAFF00924598 /* Example */,
 				0225BF56159BBAB400924598 /* Supporting Files */,
 			);
 			path = AlphabetTable;
@@ -99,6 +101,30 @@
 				0225BF5D159BBAB400924598 /* AlphabetTable-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0225BF7A159BBAFF00924598 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				0225BF5E159BBAB400924598 /* ITVAppDelegate.h */,
+				0225BF5F159BBAB400924598 /* ITVAppDelegate.m */,
+				0225BF61159BBAB400924598 /* MainStoryboard_iPhone.storyboard */,
+				0225BF64159BBAB400924598 /* MainStoryboard_iPad.storyboard */,
+				0225BF67159BBAB400924598 /* ITVViewController.h */,
+				0225BF68159BBAB400924598 /* ITVViewController.m */,
+				02971210159BD0FB00E52717 /* ITVWord.h */,
+				02971211159BD0FB00E52717 /* ITVWord.m */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		0225BF7C159BBB0D00924598 /* AlphabetTable */ = {
+			isa = PBXGroup;
+			children = (
+				0225BF7D159BBB3600924598 /* ITVAlphabetTableView.h */,
+				0225BF7E159BBB3600924598 /* ITVAlphabetTableView.m */,
+			);
+			name = AlphabetTable;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +195,8 @@
 				0225BF5C159BBAB400924598 /* main.m in Sources */,
 				0225BF60159BBAB400924598 /* ITVAppDelegate.m in Sources */,
 				0225BF69159BBAB400924598 /* ITVViewController.m in Sources */,
+				0225BF7F159BBB3600924598 /* ITVAlphabetTableView.m in Sources */,
+				02971212159BD0FB00E52717 /* ITVWord.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,6 +318,7 @@
 				0225BF6E159BBAB400924598 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

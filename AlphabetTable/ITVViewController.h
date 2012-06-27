@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ITVAlphabetTableView.h"
 
 @interface ITVViewController : UIViewController
+@property (weak, nonatomic) IBOutlet ITVAlphabetTableView *table;
 
 @end
