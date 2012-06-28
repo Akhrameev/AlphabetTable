@@ -103,19 +103,29 @@
 - (NSArray*) indexesOfObjects:(NSArray*)array {
     NSMutableArray* indices = [NSMutableArray array];
     
+    
     for(NSObject<ITVAlphabetObject>* object in array) {
     
-        NSString* letter = [self keyForObject:object];
+        if(self.isSearching) {
         
-        NSMutableArray* types = [self.objectsByLetter objectForKey:letter];
+            int index = [self.searchResults indexOfObject:object];
+            if(index != NSNotFound) {
+                [indices addObject:[NSIndexPath indexPathForRow:index inSection:0]];
+            }
+            
+        } else {
         
-        int row = [types indexOfObject:object];
-        int section = [self.alphabet indexOfObject:letter];
-        
-        if(row == NSNotFound || section == NSNotFound)
-            NSLog(@"index could not be found!");
-        
-        [indices addObject:[NSIndexPath indexPathForRow:row inSection:section]];
+            NSString* letter = [self keyForObject:object];
+            NSMutableArray* types = [self.objectsByLetter objectForKey:letter];
+            
+            int row = [types indexOfObject:object];
+            int section = [self.alphabet indexOfObject:letter];
+            
+            if(row == NSNotFound || section == NSNotFound)
+                NSLog(@"index could not be found!");
+            
+            [indices addObject:[NSIndexPath indexPathForRow:row inSection:section]];
+        }
     }
     return indices;
 }
