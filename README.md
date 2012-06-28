@@ -3,7 +3,7 @@ Alphabet Table
 
 Alphabet table will automatically sort your data objects by letter.
 
-+![Alphabet Table](http://i.imgur.com/3tMWA.png)
+![Alphabet Table](http://i.imgur.com/3tMWA.png)
 
 To use
 -----
