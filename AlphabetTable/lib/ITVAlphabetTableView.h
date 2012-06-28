@@ -13,7 +13,7 @@
 @end
 
 
-@interface ITVAlphabetTableView : UITableView <UITableViewDataSource, UITableViewDelegate>
+@interface ITVAlphabetTableView : UITableView <UITableViewDataSource>
 
 
 

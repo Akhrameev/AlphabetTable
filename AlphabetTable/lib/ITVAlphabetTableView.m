@@ -14,6 +14,8 @@
 @property(nonatomic, strong) NSArray* searchResults;
 @property(nonatomic, assign) BOOL isSearching;
 
+@property(nonatomic, strong) id<UITableViewDataSource> tableDatasource;
+
 - (void) setup;
 - (NSString*) keyForObject:(NSObject<ITVAlphabetObject>*)object;
 - (NSArray*) flatObjects;
@@ -22,7 +24,7 @@
 
 @implementation ITVAlphabetTableView
 
-@synthesize objectsByLetter, alphabet, searchResults, isSearching;
+@synthesize objectsByLetter, alphabet, searchResults, isSearching, tableDatasource;
 
 - (id) initWithCoder:(NSCoder *)aDecoder {
     if((self = [super initWithCoder:aDecoder])) {
@@ -43,10 +45,22 @@
     } return self;
 }
 
+- (void) setValue:(id)value forKey:(NSString *)key {
+
+    // poor mans swizzling here
+    
+    if([key isEqualToString:@"dataSource"]) { key = @"tableDatasource"; }
+    if([key isEqualToString:@"_dataSource"]) { key = @"dataSource"; }
+    
+    [super setValue:value forKey:key];
+}
+
 - (void) setup {
     self.alphabet = [NSArray arrayWithObjects:@" ",@"a",@"b",@"c",@"d",@"e",@"f",@"g",@"h",@"i",@"j",@"k",@"l",@"m",@"n",@"o",@"p",@"q",@"r",@"s",@"t",@"u",@"v",@"w",@"x",@"y",@"z",nil];
     self.searchResults = [NSArray array];
     self.isSearching = NO;
+    
+    self.tableDatasource = self.dataSource;
     
     NSMutableDictionary* dictionary = [NSMutableDictionary dictionary];
     for(NSString* letter in self.alphabet) {
@@ -55,8 +69,7 @@
     
     self.objectsByLetter = dictionary;
     
-    self.delegate = self;
-    self.dataSource = self;
+    [self setValue:self forKey:@"_dataSource"];
 }
 
 - (void) addObjectsFromArray:(NSArray*)array {
@@ -203,6 +216,10 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    if([self.tableDatasource respondsToSelector:@selector(tableView:cellForRowAtIndexPath:)]) {
+        return [self.tableDatasource tableView:tableView cellForRowAtIndexPath:indexPath];
+    }
+    
     static NSString *cellIdentifier = @"VanillaCell";
     
     NSObject<ITVAlphabetObject>* object = [self objectForIndexPath:indexPath];
