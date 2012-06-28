@@ -16,8 +16,8 @@
 		0225BF63159BBAB400924598 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0225BF61159BBAB400924598 /* MainStoryboard_iPhone.storyboard */; };
 		0225BF66159BBAB400924598 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0225BF64159BBAB400924598 /* MainStoryboard_iPad.storyboard */; };
 		0225BF69159BBAB400924598 /* ITVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0225BF68159BBAB400924598 /* ITVViewController.m */; };
-		0225BF7F159BBB3600924598 /* ITVAlphabetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0225BF7E159BBB3600924598 /* ITVAlphabetTableView.m */; };
 		02971212159BD0FB00E52717 /* ITVWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 02971211159BD0FB00E52717 /* ITVWord.m */; };
+		02971252159CF60C00E52717 /* ITVAlphabetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02971251159CF60C00E52717 /* ITVAlphabetTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,10 +35,10 @@
 		0225BF65159BBAB400924598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		0225BF67159BBAB400924598 /* ITVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITVViewController.h; sourceTree = "<group>"; };
 		0225BF68159BBAB400924598 /* ITVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITVViewController.m; sourceTree = "<group>"; };
-		0225BF7D159BBB3600924598 /* ITVAlphabetTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITVAlphabetTableView.h; sourceTree = "<group>"; };
-		0225BF7E159BBB3600924598 /* ITVAlphabetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITVAlphabetTableView.m; sourceTree = "<group>"; };
 		02971210159BD0FB00E52717 /* ITVWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITVWord.h; sourceTree = "<group>"; };
 		02971211159BD0FB00E52717 /* ITVWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITVWord.m; sourceTree = "<group>"; };
+		02971250159CF60C00E52717 /* ITVAlphabetTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITVAlphabetTableView.h; path = lib/ITVAlphabetTableView.h; sourceTree = "<group>"; };
+		02971251159CF60C00E52717 /* ITVAlphabetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITVAlphabetTableView.m; path = lib/ITVAlphabetTableView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,8 +121,8 @@
 		0225BF7C159BBB0D00924598 /* AlphabetTable */ = {
 			isa = PBXGroup;
 			children = (
-				0225BF7D159BBB3600924598 /* ITVAlphabetTableView.h */,
-				0225BF7E159BBB3600924598 /* ITVAlphabetTableView.m */,
+				02971250159CF60C00E52717 /* ITVAlphabetTableView.h */,
+				02971251159CF60C00E52717 /* ITVAlphabetTableView.m */,
 			);
 			name = AlphabetTable;
 			sourceTree = "<group>";
@@ -195,8 +195,8 @@
 				0225BF5C159BBAB400924598 /* main.m in Sources */,
 				0225BF60159BBAB400924598 /* ITVAppDelegate.m in Sources */,
 				0225BF69159BBAB400924598 /* ITVViewController.m in Sources */,
-				0225BF7F159BBB3600924598 /* ITVAlphabetTableView.m in Sources */,
 				02971212159BD0FB00E52717 /* ITVWord.m in Sources */,
+				02971252159CF60C00E52717 /* ITVAlphabetTableView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
