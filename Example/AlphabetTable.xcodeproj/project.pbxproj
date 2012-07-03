@@ -20,7 +20,7 @@
 		02546F9115A35ECE009DC335 /* ITVAlphabetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02546F8F15A35ECE009DC335 /* ITVAlphabetTableView.m */; };
 		02546FAC15A36301009DC335 /* AlphabetTable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02546FAA15A36301009DC335 /* AlphabetTable.xcdatamodeld */; };
 		02546FB015A36336009DC335 /* CoreDataWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 02546FAF15A36336009DC335 /* CoreDataWord.m */; };
-		02546FB315A3699C009DC335 /* ITVAlphabetTableBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 02546FB215A3699C009DC335 /* ITVAlphabetTableBase.m */; };
+		0280F3E915A391A3005FD275 /* ITVAlphabetTableBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0280F3E815A391A3005FD275 /* ITVAlphabetTableBase.m */; };
 		02971212159BD0FB00E52717 /* ITVWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 02971211159BD0FB00E52717 /* ITVWord.m */; };
 		7443927742BE41829F0C1FE9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3046646DCAD41A7BB722654 /* libPods.a */; };
 /* End PBXBuildFile section */
@@ -47,9 +47,9 @@
 		02546FAB15A36301009DC335 /* AlphabetTable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlphabetTable.xcdatamodel; sourceTree = "<group>"; };
 		02546FAE15A36336009DC335 /* CoreDataWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataWord.h; sourceTree = "<group>"; };
 		02546FAF15A36336009DC335 /* CoreDataWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataWord.m; sourceTree = "<group>"; };
-		02546FB115A3699C009DC335 /* ITVAlphabetTableBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITVAlphabetTableBase.h; sourceTree = "<group>"; };
-		02546FB215A3699C009DC335 /* ITVAlphabetTableBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITVAlphabetTableBase.m; sourceTree = "<group>"; };
-		02546FB415A369B3009DC335 /* ITVAlphabetTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITVAlphabetTable.h; sourceTree = "<group>"; };
+		0280F3E615A391A3005FD275 /* ITVAlphabetTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITVAlphabetTable.h; path = ../../ITVAlphabetTable.h; sourceTree = "<group>"; };
+		0280F3E715A391A3005FD275 /* ITVAlphabetTableBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITVAlphabetTableBase.h; path = ../../ITVAlphabetTableBase.h; sourceTree = "<group>"; };
+		0280F3E815A391A3005FD275 /* ITVAlphabetTableBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITVAlphabetTableBase.m; path = ../../ITVAlphabetTableBase.m; sourceTree = "<group>"; };
 		02971210159BD0FB00E52717 /* ITVWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITVWord.h; sourceTree = "<group>"; };
 		02971211159BD0FB00E52717 /* ITVWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITVWord.m; sourceTree = "<group>"; };
 		A3046646DCAD41A7BB722654 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,13 +142,13 @@
 		0225BF7C159BBB0D00924598 /* AlphabetTable */ = {
 			isa = PBXGroup;
 			children = (
-				02546FB415A369B3009DC335 /* ITVAlphabetTable.h */,
+				0280F3E615A391A3005FD275 /* ITVAlphabetTable.h */,
 				02546F8C15A35ECE009DC335 /* ITVAlphabetCoreDataTableView.h */,
 				02546F8D15A35ECE009DC335 /* ITVAlphabetCoreDataTableView.m */,
 				02546F8E15A35ECE009DC335 /* ITVAlphabetTableView.h */,
 				02546F8F15A35ECE009DC335 /* ITVAlphabetTableView.m */,
-				02546FB115A3699C009DC335 /* ITVAlphabetTableBase.h */,
-				02546FB215A3699C009DC335 /* ITVAlphabetTableBase.m */,
+				0280F3E715A391A3005FD275 /* ITVAlphabetTableBase.h */,
+				0280F3E815A391A3005FD275 /* ITVAlphabetTableBase.m */,
 			);
 			name = AlphabetTable;
 			sourceTree = "<group>";
@@ -244,7 +244,7 @@
 				02546F9115A35ECE009DC335 /* ITVAlphabetTableView.m in Sources */,
 				02546FAC15A36301009DC335 /* AlphabetTable.xcdatamodeld in Sources */,
 				02546FB015A36336009DC335 /* CoreDataWord.m in Sources */,
-				02546FB315A3699C009DC335 /* ITVAlphabetTableBase.m in Sources */,
+				0280F3E915A391A3005FD275 /* ITVAlphabetTableBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
