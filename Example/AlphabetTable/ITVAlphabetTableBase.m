@@ -55,6 +55,10 @@
     return nil;
 }
 
+// implemented by subclasses
+- (NSObject<ITVAlphabetObject>*) objectForIndexPath:(NSIndexPath*)path {
+    return nil;
+}
 
 + (NSString*) keyForObject:(NSObject<ITVAlphabetObject>*)object {
 

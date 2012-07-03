@@ -13,6 +13,8 @@
 @end
 
 @interface ITVAlphabetTableBase : UITableView <UITableViewDataSource>
+- (NSObject<ITVAlphabetObject>*) objectForIndexPath:(NSIndexPath*)path;
+
 
 // protected methods -- don't call these!
 @property(nonatomic, strong) id<UITableViewDataSource> tableDatasource;

@@ -23,7 +23,6 @@
 
 // methods for individual row updates
 - (NSArray*) indexesOfObjects:(NSArray*)array;
-- (NSObject<ITVAlphabetObject>*) objectForIndexPath:(NSIndexPath*)path;
 
 
 // filter the table by using a predicate, best used

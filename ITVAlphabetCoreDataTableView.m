@@ -38,6 +38,10 @@
     
 }
 
+- (NSObject<ITVAlphabetObject>*) objectForIndexPath:(NSIndexPath*)path {
+    return [self.controller objectAtIndexPath:path];
+}
+
 #pragma mark - tableview datasource
 
 - (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView {
