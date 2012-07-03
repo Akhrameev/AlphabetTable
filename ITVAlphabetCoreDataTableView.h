@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <CoreData/CoreData.h>
+#import "ITVAlphabetTableBase.h"
 
-@interface ITVAlphabetCoreDataTableView : UITableView
+@interface ITVAlphabetCoreDataTableView : ITVAlphabetTableBase <NSFetchedResultsControllerDelegate>
+
+- (void) loadTableWithPredicate:(NSPredicate*)predicate entity:(NSEntityDescription*)entity context:(NSManagedObjectContext*)context titlePath:(NSString*)path;
 
 @end

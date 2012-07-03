@@ -14,53 +14,22 @@
 @property(nonatomic, strong) NSArray* searchResults;
 @property(nonatomic, assign) BOOL isSearching;
 
-@property(nonatomic, strong) id<UITableViewDataSource> tableDatasource;
 
-- (void) setup;
-- (NSString*) keyForObject:(NSObject<ITVAlphabetObject>*)object;
 - (NSArray*) flatObjects;
 
 @end
 
 @implementation ITVAlphabetTableView
 
-@synthesize objectsByLetter, alphabet, searchResults, isSearching, tableDatasource;
-
-- (id) initWithCoder:(NSCoder *)aDecoder {
-    if((self = [super initWithCoder:aDecoder])) {
-        [self setup];
-    }
-    return self;
-}
-
-- (id) initWithFrame:(CGRect)frame {
-    if((self = [super initWithFrame:frame])) {
-        [self setup];
-    } return self;
-}
-
-- (id) initWithFrame:(CGRect)frame style:(UITableViewStyle)style {
-    if((self = [super initWithFrame:frame style:style])) {
-        [self setup];
-    } return self;
-}
-
-- (void) setValue:(id)value forKey:(NSString *)key {
-
-    // poor mans swizzling here
-    
-    if([key isEqualToString:@"dataSource"]) { key = @"tableDatasource"; }
-    if([key isEqualToString:@"_dataSource"]) { key = @"dataSource"; }
-    
-    [super setValue:value forKey:key];
-}
+@synthesize objectsByLetter, alphabet, searchResults, isSearching;
 
 - (void) setup {
+    [super setup];
+    
     self.alphabet = [NSArray arrayWithObjects:@" ",@"a",@"b",@"c",@"d",@"e",@"f",@"g",@"h",@"i",@"j",@"k",@"l",@"m",@"n",@"o",@"p",@"q",@"r",@"s",@"t",@"u",@"v",@"w",@"x",@"y",@"z",nil];
     self.searchResults = [NSArray array];
     self.isSearching = NO;
     
-    self.tableDatasource = self.dataSource;
     
     NSMutableDictionary* dictionary = [NSMutableDictionary dictionary];
     for(NSString* letter in self.alphabet) {
@@ -69,7 +38,6 @@
     
     self.objectsByLetter = dictionary;
     
-    [self setValue:self forKey:@"_dataSource"];
 }
 
 - (void) addObjectsFromArray:(NSArray*)array {
@@ -78,7 +46,7 @@
     };
     
     for(NSObject<ITVAlphabetObject>* object in array) {
-        NSString* letter = [self keyForObject:object];
+        NSString* letter = [ITVAlphabetTableView keyForObject:object];
         NSMutableArray* objects = [self.objectsByLetter objectForKey:letter];
         [objects addObject:object];
     }
@@ -90,7 +58,7 @@
 
 - (void) removeObjectsFromArray:(NSArray*)array {
     for(NSObject<ITVAlphabetObject>* object in array) {
-        NSString* letter = [self keyForObject:object];
+        NSString* letter = [ITVAlphabetTableView keyForObject:object];
         NSMutableArray* objects = [self.objectsByLetter objectForKey:letter];
         [objects removeObject:object];
     }
@@ -115,7 +83,7 @@
             
         } else {
         
-            NSString* letter = [self keyForObject:object];
+            NSString* letter = [ITVAlphabetTableBase keyForObject:object];
             NSMutableArray* types = [self.objectsByLetter objectForKey:letter];
             
             int row = [types indexOfObject:object];
@@ -154,32 +122,6 @@
     
     return array;
     
-}
-
-- (NSString*) keyForObject:(NSObject<ITVAlphabetObject>*)object {
-
-    // some titles won't start with a letter or have 
-    // a number or a weird character.  in this case we'll
-    // dump them into the empty space section
-    
-    static NSCharacterSet *s = nil;
-    
-    if(!s) s = [NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"];
-    
-    NSString* letter = nil;
-    if([[object title] length]) {
-        letter = [[[object title] substringToIndex:1] lowercaseString];
-    } else {
-        letter = @" ";
-    }
-    
-    NSRange r = [letter rangeOfCharacterFromSet:s];
-    
-    if(r.location == NSNotFound) {
-        letter = @" ";
-    }
-    
-    return letter;
 }
 
 - (NSObject<ITVAlphabetObject>*) objectForIndexPath:(NSIndexPath*)path {

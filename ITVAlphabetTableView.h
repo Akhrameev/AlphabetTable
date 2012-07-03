@@ -7,14 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ITVAlphabetTableBase.h"
 
-@protocol ITVAlphabetObject <NSObject>
-- (NSString*) title;
-@end
+@protocol ITVAlphabetObject;
 
-
-@interface ITVAlphabetTableView : UITableView <UITableViewDataSource>
-
+@interface ITVAlphabetTableView : ITVAlphabetTableBase
 
 
 // dynamically add/remove alphabet objects from an array

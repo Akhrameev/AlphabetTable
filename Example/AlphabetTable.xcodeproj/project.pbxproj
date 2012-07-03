@@ -1,865 +1,395 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>0225BF40159BBAB400924598</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0225BF55159BBAB400924598</string>
-				<string>0225BF4E159BBAB400924598</string>
-				<string>0225BF4C159BBAB400924598</string>
-				<string>F63BC1CDBDCA47A1BBBD3F40</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF42159BBAB400924598</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>CLASSPREFIX</key>
-				<string>ITV</string>
-				<key>LastUpgradeCheck</key>
-				<string>0430</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Itv</string>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>0225BF45159BBAB400924598</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-			</array>
-			<key>mainGroup</key>
-			<string>0225BF40159BBAB400924598</string>
-			<key>productRefGroup</key>
-			<string>0225BF4C159BBAB400924598</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>0225BF4A159BBAB400924598</string>
-			</array>
-		</dict>
-		<key>0225BF45159BBAB400924598</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0225BF6A159BBAB400924598</string>
-				<string>0225BF6B159BBAB400924598</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0225BF47159BBAB400924598</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0225BF5C159BBAB400924598</string>
-				<string>0225BF60159BBAB400924598</string>
-				<string>0225BF69159BBAB400924598</string>
-				<string>02971212159BD0FB00E52717</string>
-				<string>02546F9015A35ECE009DC335</string>
-				<string>02546F9115A35ECE009DC335</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0225BF48159BBAB400924598</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0225BF50159BBAB400924598</string>
-				<string>0225BF52159BBAB400924598</string>
-				<string>0225BF54159BBAB400924598</string>
-				<string>7443927742BE41829F0C1FE9</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0225BF49159BBAB400924598</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>0225BF5A159BBAB400924598</string>
-				<string>0225BF63159BBAB400924598</string>
-				<string>0225BF66159BBAB400924598</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>0225BF4A159BBAB400924598</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>0225BF6C159BBAB400924598</string>
-			<key>buildPhases</key>
-			<array>
-				<string>0225BF47159BBAB400924598</string>
-				<string>0225BF48159BBAB400924598</string>
-				<string>0225BF49159BBAB400924598</string>
-				<string>12F17B397B2C45188A15FFB4</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>AlphabetTable</string>
-			<key>productName</key>
-			<string>AlphabetTable</string>
-			<key>productReference</key>
-			<string>0225BF4B159BBAB400924598</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>0225BF4B159BBAB400924598</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>AlphabetTable.app</string>
-			<key>path</key>
-			<string>AlphabetTable.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>0225BF4C159BBAB400924598</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0225BF4B159BBAB400924598</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF4E159BBAB400924598</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0225BF4F159BBAB400924598</string>
-				<string>0225BF51159BBAB400924598</string>
-				<string>0225BF53159BBAB400924598</string>
-				<string>A3046646DCAD41A7BB722654</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF4F159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>UIKit.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/UIKit.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0225BF50159BBAB400924598</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0225BF4F159BBAB400924598</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0225BF51159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Foundation.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/Foundation.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0225BF52159BBAB400924598</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0225BF51159BBAB400924598</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0225BF53159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>CoreGraphics.framework</string>
-			<key>path</key>
-			<string>System/Library/Frameworks/CoreGraphics.framework</string>
-			<key>sourceTree</key>
-			<string>SDKROOT</string>
-		</dict>
-		<key>0225BF54159BBAB400924598</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0225BF53159BBAB400924598</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0225BF55159BBAB400924598</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0225BF7C159BBB0D00924598</string>
-				<string>0225BF7A159BBAFF00924598</string>
-				<string>0225BF56159BBAB400924598</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>AlphabetTable</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF56159BBAB400924598</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0225BF57159BBAB400924598</string>
-				<string>0225BF58159BBAB400924598</string>
-				<string>0225BF5B159BBAB400924598</string>
-				<string>0225BF5D159BBAB400924598</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF57159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>name</key>
-			<string>AlphabetTable-Info.plist</string>
-			<key>path</key>
-			<string>AlphabetTable-Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF58159BBAB400924598</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0225BF59159BBAB400924598</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF59159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.strings</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/InfoPlist.strings</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF5A159BBAB400924598</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0225BF58159BBAB400924598</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0225BF5B159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>main.m</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF5C159BBAB400924598</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0225BF5B159BBAB400924598</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0225BF5D159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>AlphabetTable-Prefix.pch</string>
-			<key>path</key>
-			<string>AlphabetTable-Prefix.pch</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF5E159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ITVAppDelegate.h</string>
-			<key>path</key>
-			<string>ITVAppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF5F159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ITVAppDelegate.m</string>
-			<key>path</key>
-			<string>ITVAppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF60159BBAB400924598</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0225BF5F159BBAB400924598</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0225BF61159BBAB400924598</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0225BF62159BBAB400924598</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>MainStoryboard_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF62159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/MainStoryboard_iPhone.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF63159BBAB400924598</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0225BF61159BBAB400924598</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0225BF64159BBAB400924598</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0225BF65159BBAB400924598</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>MainStoryboard_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF65159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>en</string>
-			<key>path</key>
-			<string>en.lproj/MainStoryboard_iPad.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF66159BBAB400924598</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0225BF64159BBAB400924598</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0225BF67159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ITVViewController.h</string>
-			<key>path</key>
-			<string>ITVViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF68159BBAB400924598</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ITVViewController.m</string>
-			<key>path</key>
-			<string>ITVViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF69159BBAB400924598</key>
-		<dict>
-			<key>fileRef</key>
-			<string>0225BF68159BBAB400924598</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>0225BF6A159BBAB400924598</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0225BF6B159BBAB400924598</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>ARCHS</key>
-				<string>$(ARCHS_STANDARD_32_BIT)</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>5.1</string>
-				<key>OTHER_CFLAGS</key>
-				<string>-DNS_BLOCK_ASSERTIONS=1</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0225BF6C159BBAB400924598</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>0225BF6D159BBAB400924598</string>
-				<string>0225BF6E159BBAB400924598</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>0225BF6D159BBAB400924598</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F63BC1CDBDCA47A1BBBD3F40</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AlphabetTable/AlphabetTable-Prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AlphabetTable/AlphabetTable-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>0225BF6E159BBAB400924598</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>F63BC1CDBDCA47A1BBBD3F40</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>DSTROOT</key>
-				<string>/tmp/xcodeproj.dst</string>
-				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
-				<string>YES</string>
-				<key>GCC_PREFIX_HEADER</key>
-				<string>AlphabetTable/AlphabetTable-Prefix.pch</string>
-				<key>GCC_VERSION</key>
-				<string>com.apple.compilers.llvm.clang.1_0</string>
-				<key>INFOPLIST_FILE</key>
-				<string>AlphabetTable/AlphabetTable-Info.plist</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SKIP_INSTALL</key>
-				<string>YES</string>
-				<key>WRAPPER_EXTENSION</key>
-				<string>app</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>0225BF7A159BBAFF00924598</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0225BF5E159BBAB400924598</string>
-				<string>0225BF5F159BBAB400924598</string>
-				<string>0225BF61159BBAB400924598</string>
-				<string>0225BF64159BBAB400924598</string>
-				<string>0225BF67159BBAB400924598</string>
-				<string>0225BF68159BBAB400924598</string>
-				<string>02971210159BD0FB00E52717</string>
-				<string>02971211159BD0FB00E52717</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Example</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0225BF7C159BBB0D00924598</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>02546F8C15A35ECE009DC335</string>
-				<string>02546F8D15A35ECE009DC335</string>
-				<string>02546F8E15A35ECE009DC335</string>
-				<string>02546F8F15A35ECE009DC335</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>AlphabetTable</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>02546F8C15A35ECE009DC335</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ITVAlphabetCoreDataTableView.h</string>
-			<key>path</key>
-			<string>../../ITVAlphabetCoreDataTableView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>02546F8D15A35ECE009DC335</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ITVAlphabetCoreDataTableView.m</string>
-			<key>path</key>
-			<string>../../ITVAlphabetCoreDataTableView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>02546F8E15A35ECE009DC335</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ITVAlphabetTableView.h</string>
-			<key>path</key>
-			<string>../../ITVAlphabetTableView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>02546F8F15A35ECE009DC335</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ITVAlphabetTableView.m</string>
-			<key>path</key>
-			<string>../../ITVAlphabetTableView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>02546F9015A35ECE009DC335</key>
-		<dict>
-			<key>fileRef</key>
-			<string>02546F8D15A35ECE009DC335</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>02546F9115A35ECE009DC335</key>
-		<dict>
-			<key>fileRef</key>
-			<string>02546F8F15A35ECE009DC335</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>02971210159BD0FB00E52717</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>ITVWord.h</string>
-			<key>path</key>
-			<string>ITVWord.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>02971211159BD0FB00E52717</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>ITVWord.m</string>
-			<key>path</key>
-			<string>ITVWord.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>02971212159BD0FB00E52717</key>
-		<dict>
-			<key>fileRef</key>
-			<string>02971211159BD0FB00E52717</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>12F17B397B2C45188A15FFB4</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-resources.sh"
-</string>
-		</dict>
-		<key>7443927742BE41829F0C1FE9</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A3046646DCAD41A7BB722654</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A3046646DCAD41A7BB722654</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>name</key>
-			<string>libPods.a</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>F63BC1CDBDCA47A1BBBD3F40</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods.xcconfig</string>
-			<key>sourceTree</key>
-			<string>SOURCE_ROOT</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>0225BF42159BBAB400924598</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0225BF50159BBAB400924598 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0225BF4F159BBAB400924598 /* UIKit.framework */; };
+		0225BF52159BBAB400924598 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0225BF51159BBAB400924598 /* Foundation.framework */; };
+		0225BF54159BBAB400924598 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0225BF53159BBAB400924598 /* CoreGraphics.framework */; };
+		0225BF5A159BBAB400924598 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0225BF58159BBAB400924598 /* InfoPlist.strings */; };
+		0225BF5C159BBAB400924598 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0225BF5B159BBAB400924598 /* main.m */; };
+		0225BF60159BBAB400924598 /* ITVAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0225BF5F159BBAB400924598 /* ITVAppDelegate.m */; };
+		0225BF63159BBAB400924598 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0225BF61159BBAB400924598 /* MainStoryboard_iPhone.storyboard */; };
+		0225BF66159BBAB400924598 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0225BF64159BBAB400924598 /* MainStoryboard_iPad.storyboard */; };
+		0225BF69159BBAB400924598 /* ITVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0225BF68159BBAB400924598 /* ITVViewController.m */; };
+		02546F9015A35ECE009DC335 /* ITVAlphabetCoreDataTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02546F8D15A35ECE009DC335 /* ITVAlphabetCoreDataTableView.m */; };
+		02546F9115A35ECE009DC335 /* ITVAlphabetTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 02546F8F15A35ECE009DC335 /* ITVAlphabetTableView.m */; };
+		02546FAC15A36301009DC335 /* AlphabetTable.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 02546FAA15A36301009DC335 /* AlphabetTable.xcdatamodeld */; };
+		02546FB015A36336009DC335 /* CoreDataWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 02546FAF15A36336009DC335 /* CoreDataWord.m */; };
+		02546FB315A3699C009DC335 /* ITVAlphabetTableBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 02546FB215A3699C009DC335 /* ITVAlphabetTableBase.m */; };
+		02971212159BD0FB00E52717 /* ITVWord.m in Sources */ = {isa = PBXBuildFile; fileRef = 02971211159BD0FB00E52717 /* ITVWord.m */; };
+		7443927742BE41829F0C1FE9 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3046646DCAD41A7BB722654 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0225BF4B159BBAB400924598 /* AlphabetTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphabetTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0225BF4F159BBAB400924598 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		0225BF51159BBAB400924598 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0225BF53159BBAB400924598 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0225BF57159BBAB400924598 /* AlphabetTable-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AlphabetTable-Info.plist"; sourceTree = "<group>"; };
+		0225BF59159BBAB400924598 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0225BF5B159BBAB400924598 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0225BF5D159BBAB400924598 /* AlphabetTable-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AlphabetTable-Prefix.pch"; sourceTree = "<group>"; };
+		0225BF5E159BBAB400924598 /* ITVAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITVAppDelegate.h; sourceTree = "<group>"; };
+		0225BF5F159BBAB400924598 /* ITVAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITVAppDelegate.m; sourceTree = "<group>"; };
+		0225BF62159BBAB400924598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		0225BF65159BBAB400924598 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		0225BF67159BBAB400924598 /* ITVViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITVViewController.h; sourceTree = "<group>"; };
+		0225BF68159BBAB400924598 /* ITVViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ITVViewController.m; sourceTree = "<group>"; };
+		02546F8C15A35ECE009DC335 /* ITVAlphabetCoreDataTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITVAlphabetCoreDataTableView.h; path = ../../ITVAlphabetCoreDataTableView.h; sourceTree = "<group>"; };
+		02546F8D15A35ECE009DC335 /* ITVAlphabetCoreDataTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITVAlphabetCoreDataTableView.m; path = ../../ITVAlphabetCoreDataTableView.m; sourceTree = "<group>"; };
+		02546F8E15A35ECE009DC335 /* ITVAlphabetTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ITVAlphabetTableView.h; path = ../../ITVAlphabetTableView.h; sourceTree = "<group>"; };
+		02546F8F15A35ECE009DC335 /* ITVAlphabetTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ITVAlphabetTableView.m; path = ../../ITVAlphabetTableView.m; sourceTree = "<group>"; };
+		02546FAB15A36301009DC335 /* AlphabetTable.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AlphabetTable.xcdatamodel; sourceTree = "<group>"; };
+		02546FAE15A36336009DC335 /* CoreDataWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataWord.h; sourceTree = "<group>"; };
+		02546FAF15A36336009DC335 /* CoreDataWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataWord.m; sourceTree = "<group>"; };
+		02546FB115A3699C009DC335 /* ITVAlphabetTableBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITVAlphabetTableBase.h; sourceTree = "<group>"; };
+		02546FB215A3699C009DC335 /* ITVAlphabetTableBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITVAlphabetTableBase.m; sourceTree = "<group>"; };
+		02546FB415A369B3009DC335 /* ITVAlphabetTable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ITVAlphabetTable.h; sourceTree = "<group>"; };
+		02971210159BD0FB00E52717 /* ITVWord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ITVWord.h; sourceTree = "<group>"; };
+		02971211159BD0FB00E52717 /* ITVWord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ITVWord.m; sourceTree = "<group>"; };
+		A3046646DCAD41A7BB722654 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		F63BC1CDBDCA47A1BBBD3F40 /* Pods.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0225BF48159BBAB400924598 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0225BF50159BBAB400924598 /* UIKit.framework in Frameworks */,
+				0225BF52159BBAB400924598 /* Foundation.framework in Frameworks */,
+				0225BF54159BBAB400924598 /* CoreGraphics.framework in Frameworks */,
+				7443927742BE41829F0C1FE9 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0225BF40159BBAB400924598 = {
+			isa = PBXGroup;
+			children = (
+				0225BF55159BBAB400924598 /* AlphabetTable */,
+				0225BF4E159BBAB400924598 /* Frameworks */,
+				0225BF4C159BBAB400924598 /* Products */,
+				F63BC1CDBDCA47A1BBBD3F40 /* Pods.xcconfig */,
+			);
+			sourceTree = "<group>";
+		};
+		0225BF4C159BBAB400924598 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0225BF4B159BBAB400924598 /* AlphabetTable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0225BF4E159BBAB400924598 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0225BF4F159BBAB400924598 /* UIKit.framework */,
+				0225BF51159BBAB400924598 /* Foundation.framework */,
+				0225BF53159BBAB400924598 /* CoreGraphics.framework */,
+				A3046646DCAD41A7BB722654 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0225BF55159BBAB400924598 /* AlphabetTable */ = {
+			isa = PBXGroup;
+			children = (
+				0225BF7C159BBB0D00924598 /* AlphabetTable */,
+				0225BF7A159BBAFF00924598 /* Example */,
+				0225BF56159BBAB400924598 /* Supporting Files */,
+			);
+			path = AlphabetTable;
+			sourceTree = "<group>";
+		};
+		0225BF56159BBAB400924598 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0225BF57159BBAB400924598 /* AlphabetTable-Info.plist */,
+				0225BF58159BBAB400924598 /* InfoPlist.strings */,
+				0225BF5B159BBAB400924598 /* main.m */,
+				0225BF5D159BBAB400924598 /* AlphabetTable-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0225BF7A159BBAFF00924598 /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				0225BF5E159BBAB400924598 /* ITVAppDelegate.h */,
+				0225BF5F159BBAB400924598 /* ITVAppDelegate.m */,
+				0225BF61159BBAB400924598 /* MainStoryboard_iPhone.storyboard */,
+				0225BF64159BBAB400924598 /* MainStoryboard_iPad.storyboard */,
+				0225BF67159BBAB400924598 /* ITVViewController.h */,
+				0225BF68159BBAB400924598 /* ITVViewController.m */,
+				02971210159BD0FB00E52717 /* ITVWord.h */,
+				02971211159BD0FB00E52717 /* ITVWord.m */,
+				02546FAE15A36336009DC335 /* CoreDataWord.h */,
+				02546FAF15A36336009DC335 /* CoreDataWord.m */,
+				02546FAA15A36301009DC335 /* AlphabetTable.xcdatamodeld */,
+			);
+			name = Example;
+			sourceTree = "<group>";
+		};
+		0225BF7C159BBB0D00924598 /* AlphabetTable */ = {
+			isa = PBXGroup;
+			children = (
+				02546FB415A369B3009DC335 /* ITVAlphabetTable.h */,
+				02546F8C15A35ECE009DC335 /* ITVAlphabetCoreDataTableView.h */,
+				02546F8D15A35ECE009DC335 /* ITVAlphabetCoreDataTableView.m */,
+				02546F8E15A35ECE009DC335 /* ITVAlphabetTableView.h */,
+				02546F8F15A35ECE009DC335 /* ITVAlphabetTableView.m */,
+				02546FB115A3699C009DC335 /* ITVAlphabetTableBase.h */,
+				02546FB215A3699C009DC335 /* ITVAlphabetTableBase.m */,
+			);
+			name = AlphabetTable;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0225BF4A159BBAB400924598 /* AlphabetTable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0225BF6C159BBAB400924598 /* Build configuration list for PBXNativeTarget "AlphabetTable" */;
+			buildPhases = (
+				0225BF47159BBAB400924598 /* Sources */,
+				0225BF48159BBAB400924598 /* Frameworks */,
+				0225BF49159BBAB400924598 /* Resources */,
+				12F17B397B2C45188A15FFB4 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlphabetTable;
+			productName = AlphabetTable;
+			productReference = 0225BF4B159BBAB400924598 /* AlphabetTable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0225BF42159BBAB400924598 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ITV;
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Itv;
+			};
+			buildConfigurationList = 0225BF45159BBAB400924598 /* Build configuration list for PBXProject "AlphabetTable" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0225BF40159BBAB400924598;
+			productRefGroup = 0225BF4C159BBAB400924598 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0225BF4A159BBAB400924598 /* AlphabetTable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0225BF49159BBAB400924598 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0225BF5A159BBAB400924598 /* InfoPlist.strings in Resources */,
+				0225BF63159BBAB400924598 /* MainStoryboard_iPhone.storyboard in Resources */,
+				0225BF66159BBAB400924598 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12F17B397B2C45188A15FFB4 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0225BF47159BBAB400924598 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0225BF5C159BBAB400924598 /* main.m in Sources */,
+				0225BF60159BBAB400924598 /* ITVAppDelegate.m in Sources */,
+				0225BF69159BBAB400924598 /* ITVViewController.m in Sources */,
+				02971212159BD0FB00E52717 /* ITVWord.m in Sources */,
+				02546F9015A35ECE009DC335 /* ITVAlphabetCoreDataTableView.m in Sources */,
+				02546F9115A35ECE009DC335 /* ITVAlphabetTableView.m in Sources */,
+				02546FAC15A36301009DC335 /* AlphabetTable.xcdatamodeld in Sources */,
+				02546FB015A36336009DC335 /* CoreDataWord.m in Sources */,
+				02546FB315A3699C009DC335 /* ITVAlphabetTableBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0225BF58159BBAB400924598 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0225BF59159BBAB400924598 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		0225BF61159BBAB400924598 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0225BF62159BBAB400924598 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		0225BF64159BBAB400924598 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0225BF65159BBAB400924598 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0225BF6A159BBAB400924598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0225BF6B159BBAB400924598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0225BF6D159BBAB400924598 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63BC1CDBDCA47A1BBBD3F40 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlphabetTable/AlphabetTable-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AlphabetTable/AlphabetTable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		0225BF6E159BBAB400924598 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F63BC1CDBDCA47A1BBBD3F40 /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/xcodeproj.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AlphabetTable/AlphabetTable-Prefix.pch";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "AlphabetTable/AlphabetTable-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0225BF45159BBAB400924598 /* Build configuration list for PBXProject "AlphabetTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0225BF6A159BBAB400924598 /* Debug */,
+				0225BF6B159BBAB400924598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0225BF6C159BBAB400924598 /* Build configuration list for PBXNativeTarget "AlphabetTable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0225BF6D159BBAB400924598 /* Debug */,
+				0225BF6E159BBAB400924598 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		02546FAA15A36301009DC335 /* AlphabetTable.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				02546FAB15A36301009DC335 /* AlphabetTable.xcdatamodel */,
+			);
+			currentVersion = 02546FAB15A36301009DC335 /* AlphabetTable.xcdatamodel */;
+			path = AlphabetTable.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 0225BF42159BBAB400924598 /* Project object */;
+}

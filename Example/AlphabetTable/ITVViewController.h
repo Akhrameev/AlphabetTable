@@ -8,8 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "ITVAlphabetTableView.h"
+#import "ITVAlphabetCoreDataTableView.h"
 
 @interface ITVViewController : UIViewController
-@property (weak, nonatomic) IBOutlet ITVAlphabetTableView *table;
 
 @end
