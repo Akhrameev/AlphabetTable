@@ -10,6 +10,6 @@ Pod::Spec.new do |s|
   s.platform = :ios
   s.source_files = ''
   s.requires_arc = true
-  s.dependency 'NLCoreData', '~0.2.0'
+  s.dependency 'NLCoreData', '>=0.2.0'
 end
 
