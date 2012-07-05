@@ -10,10 +10,4 @@
 
 @implementation CoreDataWord
 @dynamic name;
-@synthesize title;
-
-- (NSString*) title {
-    return [self name];
-}
-
 @end

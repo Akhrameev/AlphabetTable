@@ -11,9 +11,8 @@
 #import "ITVAlphabetTableView.h"
 
 
-@interface CoreDataWord : NSManagedObject <ITVAlphabetObject>
+@interface CoreDataWord : NSManagedObject 
 
 @property (nonatomic, retain) NSString * name;
-@property (nonatomic, strong) NSString * title;
 
 @end

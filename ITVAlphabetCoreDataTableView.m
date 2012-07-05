@@ -10,22 +10,26 @@
 
 @interface ITVAlphabetCoreDataTableView()
 @property(nonatomic, strong) NSFetchedResultsController* controller;
+@property(nonatomic, strong) NSString* titlePath;
 @end
 
 @implementation ITVAlphabetCoreDataTableView
 
-@synthesize controller;
+@synthesize controller, titlePath;
 
 - (void) loadTableWithPredicate:(NSPredicate*)predicate entity:(NSEntityDescription*)entity context:(NSManagedObjectContext*)context titlePath:(NSString*)path {
 
+    self.titlePath = path;
+
     NSSortDescriptor* sort = [[NSSortDescriptor alloc] initWithKey:path ascending:YES selector:@selector(caseInsensitiveCompare:)];
     NSFetchRequest* request = [[NSFetchRequest alloc] init];
+    NSString* sectionPath = [NSString stringWithFormat:@"_firstLetterOf%@", path];
     
     request.entity = entity;
     request.sortDescriptors = [NSArray arrayWithObject:sort];
     request.fetchBatchSize = 20;
     
-    self.controller = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:context sectionNameKeyPath:@"_firstLetterOfTitle" cacheName:@"a cache"];
+    self.controller = [[NSFetchedResultsController alloc] initWithFetchRequest:request managedObjectContext:context sectionNameKeyPath:sectionPath cacheName:@"a cache"];
     self.controller.delegate = self;
     
     NSError* error;
@@ -76,7 +80,7 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
     }
     
-    [cell.textLabel setText:object.title];
+    [cell.textLabel setText:[object valueForKeyPath:self.titlePath]];
     
     return cell;
 }
@@ -135,12 +139,14 @@
 
 @end
 
-@interface NSManagedObject(ITVAlphabetTable)
-- (NSString*) _firstLetterOfTitle;
-@end
-
 @implementation NSManagedObject(ITVAlphabetTable)
-- (NSString*) _firstLetterOfTitle {
-    return [ITVAlphabetTableBase keyForObject:(NSObject<ITVAlphabetObject>*)self];
+- (id) valueForUndefinedKey:(NSString*)key {
+    if([key hasPrefix:@"_firstLetterOf"]) {
+        NSString* keyPath = [key stringByReplacingOccurrencesOfString:@"_firstLetterOf" withString:@""];
+        return [ITVAlphabetTableBase keyOnPath:keyPath forObject:self];
+    } else {
+        return [super valueForUndefinedKey:key];
+    }
 }
+
 @end

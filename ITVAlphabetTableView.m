@@ -46,7 +46,7 @@
     };
     
     for(NSObject<ITVAlphabetObject>* object in array) {
-        NSString* letter = [ITVAlphabetTableView keyForObject:object];
+        NSString* letter = [ITVAlphabetTableView keyOnPath:@"title" forObject:object];
         NSMutableArray* objects = [self.objectsByLetter objectForKey:letter];
         [objects addObject:object];
     }
@@ -58,7 +58,7 @@
 
 - (void) removeObjectsFromArray:(NSArray*)array {
     for(NSObject<ITVAlphabetObject>* object in array) {
-        NSString* letter = [ITVAlphabetTableView keyForObject:object];
+        NSString* letter = [ITVAlphabetTableView keyOnPath:@"title" forObject:object];
         NSMutableArray* objects = [self.objectsByLetter objectForKey:letter];
         [objects removeObject:object];
     }
@@ -83,7 +83,7 @@
             
         } else {
         
-            NSString* letter = [ITVAlphabetTableBase keyForObject:object];
+            NSString* letter = [ITVAlphabetTableBase keyOnPath:@"title" forObject:object];
             NSMutableArray* types = [self.objectsByLetter objectForKey:letter];
             
             int row = [types indexOfObject:object];

@@ -18,7 +18,8 @@
 
 // protected methods -- don't call these!
 @property(nonatomic, strong) id<UITableViewDataSource> tableDatasource;
+
 - (void) setup;
-+ (NSString*) keyForObject:(NSObject<ITVAlphabetObject>*)object;
++ (NSString*) keyOnPath:(NSString*)path forObject:(id)object;
 
 @end

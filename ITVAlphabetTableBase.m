@@ -60,7 +60,7 @@
     return nil;
 }
 
-+ (NSString*) keyForObject:(NSObject<ITVAlphabetObject>*)object {
++ (NSString*) keyOnPath:(NSString*)path forObject:(id)object {
 
     // some titles won't start with a letter or have 
     // a number or a weird character.  in this case we'll
@@ -71,8 +71,8 @@
     if(!s) s = [NSCharacterSet characterSetWithCharactersInString:@"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"];
     
     NSString* letter = nil;
-    if([[object title] length]) {
-        letter = [[[object title] substringToIndex:1] lowercaseString];
+    if([[object valueForKeyPath:path] length]) {
+        letter = [[[object valueForKeyPath:path] substringToIndex:1] lowercaseString];
     } else {
         letter = @" ";
     }
