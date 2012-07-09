@@ -66,7 +66,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    if([self.tableDatasource respondsToSelector:@selector(tableView:cellForRowAtIndexPath:)]) {
+    if(self.tableDatasource != self && [self.tableDatasource respondsToSelector:@selector(tableView:cellForRowAtIndexPath:)]) {
         return [self.tableDatasource tableView:tableView cellForRowAtIndexPath:indexPath];
     }
     

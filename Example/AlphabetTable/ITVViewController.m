@@ -23,8 +23,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self loadCoreData];
-    //[self loadNormalDataExample];
+    //[self loadCoreData];
+    [self loadNormalDataExample];
 }
 
 - (void)loadCoreData {
