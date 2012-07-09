@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name     = 'AlphabetTable'
-  s.version  = '0.0.1'
+  s.version  = '0.0.2'
   s.license  = 'MIT'
   s.summary  = 'A UITableView subclass which automatically sorts your data elements into sections keyed by letter.'
   s.homepage = 'https://github.com/idottv/AlphabetTable'
