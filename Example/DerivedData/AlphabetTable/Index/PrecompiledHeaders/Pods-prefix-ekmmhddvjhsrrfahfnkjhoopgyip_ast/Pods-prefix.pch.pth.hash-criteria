@@ -1,0 +1,35 @@
+Contents of /Users/bryce/Documents/work/itv/AlphabetTable/Example/Pods/Pods-prefix.pch
+4.0 (tags/Apple/clang-421.10.53) (based on LLVM 3.1svn)
+i386-apple-darwin12.0.0
+-x
+objective-c
+-arch
+i386
+-fmessage-length=0
+-std=gnu99
+-fpascal-strings
+-O0
+-DDEBUG=1
+-isysroot
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator6.0.sdk
+-fexceptions
+-fasm-blocks
+-g
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-DIBOutlet=__attribute__((iboutlet))
+-DIBOutletCollection(ClassName)=__attribute__((iboutletcollection(ClassName)))
+-DIBAction=void)__attribute__((ibaction)
+-mios-simulator-version-min=4.3
+-iquote
+-iquote
+-I/Users/bryce/Documents/work/itv/AlphabetTable/Example/DerivedData/AlphabetTable/Build/Products/Debug-iphonesimulator/include
+-I/Users/bryce/Documents/work/itv/AlphabetTable/Example/Pods/Headers
+-I/Users/bryce/Documents/work/itv/AlphabetTable/Example/Pods/Headers/NLCoreData
+-F/Users/bryce/Documents/work/itv/AlphabetTable/Example/DerivedData/AlphabetTable/Build/Products/Debug-iphonesimulator
+-ferror-limit=10
+-working-directory=/Users/bryce/Documents/work/itv/AlphabetTable/Example/Pods
+-Xclang
+-detailed-preprocessing-record
+-fobjc-arc
+SDK_PRODUCT_BUILD_VERSION=10A5355e

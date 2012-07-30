@@ -11,17 +11,15 @@
 @interface ITVAlphabetTableView()
 @property(nonatomic, strong) NSMutableDictionary* objectsByLetter;
 @property(nonatomic, strong) NSArray* alphabet;
+@property(nonatomic, strong) NSArray* filteredAlphabet;
 @property(nonatomic, strong) NSArray* searchResults;
 @property(nonatomic, assign) BOOL isSearching;
-
 
 - (NSArray*) flatObjects;
 
 @end
 
 @implementation ITVAlphabetTableView
-
-@synthesize objectsByLetter, alphabet, searchResults, isSearching;
 
 - (void) setup {
     [super setup];
@@ -30,13 +28,7 @@
     self.searchResults = [NSArray array];
     self.isSearching = NO;
     
-    
-    NSMutableDictionary* dictionary = [NSMutableDictionary dictionary];
-    for(NSString* letter in self.alphabet) {
-        [dictionary setObject:[NSMutableArray array] forKey:letter];
-    }
-    
-    self.objectsByLetter = dictionary;
+    self.objectsByLetter = [NSMutableDictionary dictionary];
     
 }
 
@@ -48,12 +40,18 @@
     for(NSObject<ITVAlphabetObject>* object in array) {
         NSString* letter = [ITVAlphabetTableView keyOnPath:@"title" forObject:object];
         NSMutableArray* objects = [self.objectsByLetter objectForKey:letter];
+        if(!objects) {
+            objects = [NSMutableArray array];
+            [self.objectsByLetter setObject:objects forKey:letter];
+        }
         [objects addObject:object];
     }
     
     [self.objectsByLetter enumerateKeysAndObjectsUsingBlock:^(NSString* letter, NSMutableArray* objects, BOOL *stop) {
         [objects sortUsingComparator:sort];
     }];
+    
+    [self updateFilteredArray];
 }
 
 - (void) removeObjectsFromArray:(NSArray*)array {
@@ -61,7 +59,13 @@
         NSString* letter = [ITVAlphabetTableView keyOnPath:@"title" forObject:object];
         NSMutableArray* objects = [self.objectsByLetter objectForKey:letter];
         [objects removeObject:object];
+        
+        if(![objects count]) {
+            [self.objectsByLetter removeObjectForKey:letter];
+        }
     }
+    
+    [self updateFilteredArray];
 }
 
 - (void) removeAllObjects {
@@ -126,10 +130,18 @@
 
 - (NSObject<ITVAlphabetObject>*) objectForIndexPath:(NSIndexPath*)path {
     if(!self.isSearching) {
-        return [[self.objectsByLetter objectForKey:[self.alphabet objectAtIndex:path.section]] objectAtIndex:path.row];
+        return [[self.objectsByLetter objectForKey:[self.filteredAlphabet objectAtIndex:path.section]] objectAtIndex:path.row];
     } else {
         return [self.searchResults objectAtIndex:path.row];
     }
+}
+
+- (void) updateFilteredArray {
+    NSArray* lettersInUse = [self.objectsByLetter allKeys];
+    
+    self.filteredAlphabet = [lettersInUse sortedArrayUsingComparator:^(NSString* a, NSString* b) {
+        return [a compare:b];
+    }];
 }
 
 #pragma mark - tableview datasource
@@ -138,7 +150,7 @@
     if(self.isSearching) return nil;
     NSMutableArray* uppercaseLetter = [NSMutableArray array];
     
-    [self.alphabet enumerateObjectsUsingBlock:^(NSString* letter, NSUInteger index, BOOL* stop) {
+    [self.filteredAlphabet enumerateObjectsUsingBlock:^(NSString* letter, NSUInteger index, BOOL* stop) {
         [uppercaseLetter addObject:[letter uppercaseString]];
     }];
     
@@ -151,18 +163,18 @@
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section {
     if(self.isSearching) return nil;
-    return [[self.alphabet objectAtIndex:section] uppercaseString];
+    return [[self.filteredAlphabet objectAtIndex:section] uppercaseString];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     if(self.isSearching) return 1;
-    return self.alphabet.count;
+    return [self.filteredAlphabet count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     if(self.isSearching) return [self.searchResults count];
     
-    NSString* letter = [self.alphabet objectAtIndex:section];
+    NSString* letter = [self.filteredAlphabet objectAtIndex:section];
     
     return [[self.objectsByLetter objectForKey:letter] count];
 }
