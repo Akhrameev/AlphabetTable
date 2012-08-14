@@ -91,7 +91,7 @@
             NSMutableArray* types = [self.objectsByLetter objectForKey:letter];
             
             int row = [types indexOfObject:object];
-            int section = [self.alphabet indexOfObject:letter];
+            int section = [self.filteredAlphabet indexOfObject:letter];
             
             if(row == NSNotFound || section == NSNotFound)
                 NSLog(@"index could not be found!");
